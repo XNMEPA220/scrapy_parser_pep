@@ -16,7 +16,6 @@ class PepParsePipeline:
         return item
 
     def close_spider(self, spider):
-        # filename = 'results/status_summary_' + dt.datetime.now().strftime('%Y-%m-%d_%H-%M-%S') + '.csv'
         filename = os.path.join(
             BASE_DIR,
             'results/status_summary_'
